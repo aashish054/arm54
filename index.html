@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>arm_home</title>
+
 	 <meta charset="utf-8">
   	<meta name="viewport" content="width=device-width, initial-scale=1">
   	<link rel="icon" type="" href="images/title_icon.png">
@@ -11,6 +12,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <style>
+	
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
 	.circle{
 		width:150px;
 		height:150px;
@@ -33,20 +37,55 @@
   		<span class="navbar-brand mb-0 h1">arm <b> < / ></b></span>
   		<ul class="navbar-nav">
   			<li class="nav-item">
-  				<i class="fas fa-user-tie fa-2x text-white"></i>
+  				<button type="button" class="bg-transparent text-white"  style="border:0px;" data-toggle="modal" data-target="#about_me">
+  					<i class="fas fa-user-tie fa-2x"></i>
+</button>
   			</li>
   		</ul>
 </nav>
 
-<div class="container text-center">
-<pre class="text-white">
+<!-- Modal -->
+<div class="modal fade" id="about_me" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Get To Know Developer</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+   		<table>
+   			<tr><td style="width:150px;">Name</td><td>: arm54</td></tr>
+   			<tr><td>Birth Month</td><td>: Aug</td></tr>
+   			<tr><td>Qualification</td><td>: Bachelor Engineering in CSE</td></tr>
+   			<tr><td>Birth Place</td><td>: Gorkha,Nepal</td></tr>
+   		</table>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="container text-center" style="cursor:all-scroll;">
+<pre class="text-white" style="position:relative;font-family: 'VT323', monospace;font-size: 20px;">
 	<br>
 	for(i=0;i<24;i++){
-		code();Eat();Sleep();
+		code();eat();sleep();
 }
 </pre>
 	</div>
 	
+
+
+
+
 	<div class="jumbotron" style="background:#444;border-radius:0;padding:0" >
 		<div class="jumbotron pt-sm-0"  style="background:#444;border-radius:0;" >
 			<div class="row justify-content-center text-center ">
@@ -151,8 +190,14 @@
 
 	</div>
 </div>
+
+
+
+
+
 <div class="container-fluid text-success text-center fixed-bottom  rounded" style="background:#333">
 	<div class="row justify-content-center" style="margin-top:10px">
+		<div style="font-size: 12px ">Follow @</div>
 		<a class="col-sm-1 col-2" href="https://github.com/aashish054/"><button class="bg-transparent" style="border:none;"><i class="fab fa-github fa-2x"></i></button></a>
 		<a class="col-sm-1 col-2" href="https://facebook.com/aashish0054"><button class="bg-transparent" style="border:none;"><i class="fab fa-facebook fa-2x"></i></button></a>
 		<a class="col-sm-1 col-2" href=""><button class="bg-transparent" style="border:none;"><i class="fab fa-google fa-2x"></i></button></a>
