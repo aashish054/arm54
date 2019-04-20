@@ -17,6 +17,7 @@
 	p{
 		font-family: 'Courgette', cursive;
 		text-decoration: underline;
+		font-size: 4vw;
 	}
 body{
 	background-color: #333;
@@ -31,10 +32,13 @@ body{
 	position: absolute;
 	width:100%;
 	height:100%;
-	background-image: url('images/bouddha.jpg');
+	background-image: url('images/bouddha/bouddha.jpg');
 	width:100%;
 	background-repeat: no-repeat;
 	background-size:100% 100%;
+	
+
+
 }
 #container{
 	position: absolute;
@@ -72,12 +76,12 @@ body{
 }
 
 </style>
-<div id="background"></div>
+<div id="background" style="filter: blur(5px);"></div>
 <div class="container" id="container">
 	<div class="row justify-content-center">
 		<div class="col-12 col-sm-10 col-md-4">
 			<div class="card text-white" style="background:rgba(25,25,25,0.5)">
-				<p class="text-center display-4 font-weight-bold text-white">Login</p>
+				<p class="text-center font-weight-bold text-white">Login</p>
 				<div class="card-body">
 					<center>
 					<label>Username</label><br>
@@ -91,7 +95,7 @@ body{
 		</div>
 		<div class="col-12 col-sm-10 col-md-5" id='or'>
 			<div class="card text-white" style="background:rgba(25,25,25,0.5)">
-				<p class="text-center display-4 font-weight-bold text-white">Alternatives</p>
+				<p class="text-center font-weight-bold text-white">Alternatives</p>
 				<div class="card-body" >
 					<center>
 					<button class="col col-12 btn btn-primary  w-100 m-1 -block"> <i class="fab fa-facebook-f"></i> Login with Facebook</button>
