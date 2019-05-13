@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Stretched-Menu</title>
+</head>
+<body>
+	<style type="text/css">
+		body{margin: 0px;padding: 0px;background-color: red;}
+		.container{background-color: red;}
+		.container div{position: relative;text-align: center;background-color: red;height:17.5vh;width: auto;color: white;transition: 1s;cursor: pointer;}
+		.container div:hover{background: darkred;}
+		label{position: absolute;font-size: 30px;font-family: arial;top: 50%;left: 50%;transform: translate(-50%,-50%);
+	</style>
+<div class="container">
+	<div id="1" onmouseover="expand(this.id)" onmouseout="contract(this.id)"><label>Home</label></div>
+	<div id="2" onmouseover="expand(this.id)" onmouseout="contract(this.id)"><label>Book Now</label></div>
+	<div id="3" onmouseover="expand(this.id)" onmouseout="contract(this.id)"><label>Orders</label></div>
+	<div id="4" onmouseover="expand(this.id)" onmouseout="contract(this.id)"><label>Events</label></div>
+	<div id="5" onmouseover="expand(this.id)" onmouseout="contract(this.id)"><label>Contact Us</label></div>
+</div>
+
+</body>
+</html>
+<script type="text/javascript">
+	function expand(id){
+		document.getElementById("1").style.height="15vh";
+		document.getElementById("2").style.height="15vh";
+		document.getElementById("3").style.height="15vh";
+		document.getElementById("4").style.height="15vh";
+		document.getElementById("5").style.height="15vh";
+		document.getElementById(id).style.height="40vh";
+	}
+	function contract(id){
+		document.getElementById("1").style.height="17.5vh";
+		document.getElementById("2").style.height="17.5vh";
+		document.getElementById("3").style.height="17.5vh";
+		document.getElementById("4").style.height="17.5vh";
+		document.getElementById("5").style.height="17.5vh";
+	}
+
+</script>
